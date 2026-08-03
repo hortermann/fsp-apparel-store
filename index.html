@@ -118,6 +118,8 @@ html,body{background:var(--white);color:var(--dark-text);font-family:Arial,sans-
 .summary-line .sl-name{font-family:'Arial Black',Arial,sans-serif;font-size:13px;color:var(--navy);letter-spacing:-.01em}
 .summary-line .sl-spec{font-size:11px;font-style:italic;color:var(--slate);margin-top:3px}
 .summary-empty{font-size:12px;font-style:italic;color:var(--slate);padding:18px 0}
+.avail-note{margin-top:20px;padding:16px 18px;background:var(--off-white);border-left:3px solid var(--sky);font-size:12px;line-height:1.6;color:var(--dark-text)}
+.avail-note .an-label{display:block;font-size:9px;font-weight:900;color:var(--slate);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
 .slot-num{font-family:'Arial Black',Arial,sans-serif;font-size:20px;color:var(--green);line-height:1;min-width:28px}
 .action-stack{display:flex;flex-direction:column;gap:10px;margin-top:20px}
 .err-box{background:#FDF3F3;border-left:4px solid #D64545;padding:12px 14px;font-size:12px;color:#8C2B2B;margin-top:16px;display:none}
@@ -228,6 +230,10 @@ html,body{background:var(--white);color:var(--dark-text);font-family:Arial,sans-
           <h3>Your picks</h3>
           <div class="p-sub" id="sum-status">Nothing selected yet.</div>
           <div id="sum-list"><div class="summary-empty">Head back to the men's or women's tab and pick two pieces.</div></div>
+          <div class="avail-note">
+            <span class="an-label">Availability</span>
+            Stock isn't guaranteed until the order is placed. If something you picked is unavailable, we'll email you with alternatives and you choose the replacement &mdash; nothing gets substituted without your okay.
+          </div>
         </div>
 
         <div class="panel">
@@ -263,6 +269,7 @@ html,body{background:var(--white);color:var(--dark-text);font-family:Arial,sans-
         <div>
           <p><strong>Deadline is Friday, August 21.</strong> Orders submitted after that date won't make this production run.</p>
           <p><strong>Delivery is mid-September</strong>, possibly sooner. We'll confirm by email and let you know where to pick your items up.</p>
+          <p><strong>If an item is unavailable</strong>, you'll get an email with options and you pick the replacement. We won't swap anything on your behalf.</p>
           <p>Questions, size swaps, or additional items: contact <a href="#" id="contact-link">Matt Horton</a>.</p>
         </div>
       </div>
@@ -294,7 +301,7 @@ html,body{background:var(--white);color:var(--dark-text);font-family:Arial,sans-
    CONFIG — change these two lines if orders should go elsewhere
    ============================================================ */
 var CONFIG = {
-  orderEmail: "matt.horton@flowservicepartners.com",
+  orderEmail: "matt.horton@flowservice.com",
   contactName: "Matt Horton",
   deadline: "Friday, August 21, 2026",
   delivery: "Mid-September 2026",
